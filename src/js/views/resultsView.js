@@ -7,6 +7,10 @@ class ResultsView extends View {
   _errorMessage = 'No recepies found for your query. Please try again!';
   _message = '';
 
+  _newTest() {
+    return 'just a message';
+  }
+
   _generateMarkup() {
     return this._data.map(result => previewView.render(result, false)).join('');
   }
